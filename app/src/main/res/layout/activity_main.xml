@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -8,12 +9,26 @@
             android:text="@string/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/name_text" android:textAlignment="center"
+            android:id="@+id/name_text"
+            android:textAlignment="center"
             style="@style/name_text"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@android:drawable/btn_star_big_on"
-            android:id="@+id/star_image" android:layout_marginTop="@dimen/layout_margin"
+            android:id="@+id/star_image"
+            android:layout_marginTop="@dimen/layout_margin"
             android:contentDescription="@string/yellow_star"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="@string/bio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bio_text" android:layout_marginTop="@dimen/layout_margin"
+                android:paddingEnd="@dimen/small_paddings" android:paddingStart="@dimen/small_paddings"
+                android:fontFamily="@font/roboto" android:textSize="16sp" android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+
 </LinearLayout>
